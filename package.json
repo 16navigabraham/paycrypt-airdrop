@@ -1,0 +1,48 @@
+{
+  "name": "paycrypt-airdrop",
+  "version": "1.0.0",
+  "description": "PayCrypt token airdrop claim page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:base": "hardhat run scripts/deploy.ts --network base",
+    "deploy:base-testnet": "hardhat run scripts/deploy.ts --network base-testnet",
+    "generate-merkle": "ts-node scripts/generate-merkle.ts",
+    "verify:base": "hardhat verify --network base"
+  },
+  "dependencies": {
+    "@web3modal/ethers": "^3.5.7",
+    "ethers": "^6.15.0",
+    "merkletreejs": "^0.3.11",
+    "next": "^14.2.31",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@types/node": "^20.19.9",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.31",
+    "hardhat": "^2.26.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "blockchain",
+    "airdrop",
+    "defi",
+    "ethereum",
+    "base",
+    "merkle-tree"
+  ],
+  "author": "PayCrypt Team",
+  "license": "MIT"
+}
