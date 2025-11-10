@@ -316,7 +316,7 @@ export default function AirdropClaimPage() {
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
                     <span className="text-red-800">
-                      This wallet is not eligible for the airdrop
+                      This wallet is not eligible for the airdrop,try checking for  another wallet
                     </span>
                   </div>
                 </div>
@@ -384,7 +384,7 @@ export default function AirdropClaimPage() {
                 <h3 className="font-semibold mb-2">How to claim:</h3>
                 <ol className="list-decimal list-inside space-y-1">
                   <li>Make sure you're connected to the Base network</li>
-                  <li>Check that your wallet is eligible</li>
+                  <li>Check if your wallet is eligible</li>
                   <li>Click the claim button and confirm the transaction</li>
                   <li>Wait for transaction confirmation</li>
                   <li>Tokens will appear in your wallet</li>
