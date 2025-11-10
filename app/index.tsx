@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import { createWeb3Modal, defaultConfig } from '@web3modal/ethers/react';
 import { useWeb3ModalProvider, useWeb3ModalAccount } from '@web3modal/ethers/react';
+import dynamic from 'next/dynamic';
+import ReownConnectButton from './reownWallet';
 
 // Types
 interface ClaimData {
@@ -244,7 +246,12 @@ export default function AirdropClaimPage() {
             <p className="text-gray-600 mb-6">
               Connect your wallet to check eligibility and claim tokens
             </p>
-            <w3m-button />
+            {/* Reown AppKit connect button (falls back to instructing install) */}
+            <ReownConnectButton />
+            {/* Keep <w3m-button /> available as an alternative if Reown isn't used */}
+            <div className="mt-4">
+              <w3m-button />
+            </div>
           </div>
         ) : (
           <>
